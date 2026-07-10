@@ -6,7 +6,7 @@
   <title>BlitzPay</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #233450;
@@ -29,8 +29,7 @@
 
     body {
       min-height: 100vh;
-      background:
-        radial-gradient(circle at center, rgba(66, 90, 130, 0.42) 0%, rgba(35, 52, 80, 0.94) 58%, #233450 100%);
+      background: radial-gradient(circle at center, rgba(66, 90, 130, 0.42) 0%, rgba(35, 52, 80, 0.94) 58%, #233450 100%);
       color: var(--white);
       font-family: "Open Sans", sans-serif;
       display: flex;
@@ -42,29 +41,35 @@
 
     .hero {
       width: 100%;
-      max-width: 1100px;
+      max-width: 980px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .logo-wrap {
-      margin-bottom: 22px;
+      margin-bottom: 12px;
     }
 
     .actual-logo {
-      width: min(760px, 92vw);
+      width: min(420px, 70vw);
+      max-height: 180px;
       height: auto;
       display: block;
       margin: 0 auto;
+      object-fit: contain;
     }
 
     .tagline {
-      font-size: clamp(1.35rem, 2.7vw, 2.3rem);
+      font-size: clamp(1.2rem, 2.5vw, 2rem);
       font-weight: 400;
       color: var(--white);
       line-height: 1.35;
     }
 
     .highlight {
-      font-size: clamp(1.3rem, 2.7vw, 2.25rem);
+      font-size: clamp(1.2rem, 2.5vw, 1.95rem);
       color: var(--yellow);
       font-style: italic;
       font-weight: 700;
@@ -74,7 +79,7 @@
 
     .coming-soon {
       display: inline-block;
-      margin-top: 30px;
+      margin-top: 26px;
       padding: 10px 18px;
       border: 1px solid rgba(187, 211, 250, 0.35);
       border-radius: 999px;
@@ -86,7 +91,7 @@
     }
 
     .contact {
-      margin-top: 28px;
+      margin-top: 24px;
       font-size: 1rem;
       color: var(--muted);
       line-height: 1.9;
@@ -109,7 +114,13 @@
       }
 
       .actual-logo {
-        width: min(680px, 96vw);
+        width: min(320px, 78vw);
+        max-height: 140px;
+      }
+
+      .tagline,
+      .highlight {
+        font-size: 1.1rem;
       }
 
       .contact {
@@ -122,7 +133,7 @@
 <body>
   <main class="hero">
     <div class="logo-wrap">
-      <img src="[BlitzPay] Logo.png" alt="BlitzPay logo" class="actual-logo">
+      <img src="blitzpay-logo.png" alt="BlitzPay logo" class="actual-logo">
     </div>
 
     <p class="tagline">Transforming messy, fragmented payroll into a</p>
@@ -131,7 +142,7 @@
     <div class="coming-soon">Coming Soon</div>
 
     <div class="contact">
-      <p>LinkedIn: <a href="https://www.linkedin.com/company/blitzpaypayroll">linkedin.com/company/blitzpaypayroll</a></p>
+      <p>Email: <a href="mailto:hello@blitzpay.ph">hello@blitzpay.ph</a></p>
       <p>Facebook: <a href="https://facebook.com/blitzpay" target="_blank" rel="noopener noreferrer">facebook.com/blitzpay</a></p>
       <p>Contact us for early inquiries and partnerships.</p>
     </div>
