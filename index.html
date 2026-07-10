@@ -6,7 +6,8 @@
   <title>BlitzPay</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #233450;
@@ -41,7 +42,7 @@
 
     .hero {
       width: 100%;
-      max-width: 980px;
+      max-width: 1100px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -49,15 +50,29 @@
     }
 
     .logo-wrap {
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
 
-    .actual-logo {
-      width: min(420px, 70vw);
-      max-height: 180px;
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .brand-text {
+      font-family: "Archivo Black", sans-serif;
+      font-size: clamp(3rem, 9vw, 7rem);
+      line-height: 0.9;
+      color: #F5F7FB;
+      letter-spacing: 1px;
+    }
+
+    .logo-icon {
+      width: min(95px, 16vw);
       height: auto;
       display: block;
-      margin: 0 auto;
       object-fit: contain;
     }
 
@@ -113,9 +128,16 @@
         padding: 20px;
       }
 
-      .actual-logo {
-        width: min(320px, 78vw);
-        max-height: 140px;
+      .brand-row {
+        gap: 10px;
+      }
+
+      .brand-text {
+        font-size: clamp(2.3rem, 12vw, 4rem);
+      }
+
+      .logo-icon {
+        width: min(70px, 18vw);
       }
 
       .tagline,
@@ -133,7 +155,10 @@
 <body>
   <main class="hero">
     <div class="logo-wrap">
-      <img src="[BlitzPay] Logo.png" alt="BlitzPay logo" class="actual-logo">
+      <div class="brand-row">
+        <h1 class="brand-text">BLITZPAY</h1>
+        <img src="[BlitzPay] Logo.png" alt="BlitzPay logo icon" class="logo-icon">
+      </div>
     </div>
 
     <p class="tagline">Transforming messy, fragmented payroll into a</p>
